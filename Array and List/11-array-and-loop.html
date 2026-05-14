@@ -35,8 +35,8 @@
     console.log(myArray);
     */
 
-
     /*
+
     //While loop
 
     let i = 1;
@@ -59,9 +59,8 @@
     }
 
     console.log(randomNumber);
-    */
+ 
 
-    /*
     const todoList = [
       'make dinner',
       'wash dishes',
@@ -71,7 +70,6 @@
     for (let i = 0; i < todoList.length; i++) {
       console.log(i);
     }
-    */
 
     //How do we calculate the total in an Array?
 
@@ -91,6 +89,56 @@
       numsDoubled.push(num * 2);
     }
     console.log(numsDoubled);
+    */
+
+
+    const array1 = [1,2,3,4,5];
+    const array2 = array1.slice();  // By using slics now on push 8 only array2 will be modified and array1 remsain as initial.
+    array2.push(8);
+
+    console.log(array1);
+    console.log(array2);
+
+    //Distructuring
+
+    const [firstValue, secondValue, thirdValue] = [1,2,3];
+
+    for (let i = 1; i <=10; i++) {
+      if (i === 3) {   //Skip 3
+        continue;
+      }
+      console.log(i);
+      if (i === 8) {   //Stop loop if i=8
+        break;        
+      }
+    }
+
+    let i = 1;
+
+    while (i <= 100) {
+      if(i % 3 === 0) {
+        i++;
+        continue;
+      }
+      console.log(i);
+      i++
+    }
+
+
+    function doubleArraay(nums) {
+      const numsDoubled = [];
+
+      for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        if (num === 0){
+          return numsDoubled;   //Return immediatly terminate the loop.
+        }
+        numsDoubled.push(num * 2);
+      }
+      return numsDoubled;
+    }
+    console.log(doubleArraay([1,1,1]));
+    console.log(doubleArraay([2,2,3,0,5,4]));
 
   </script>
 </body>

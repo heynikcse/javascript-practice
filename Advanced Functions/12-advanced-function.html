@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    /*
+    function greeting() {
+      console.log('hello');
+    }
+    greeting();
+
+    const function1 = function() {   //Anonymous function
+      console.log('hello2');
+    };
+
+    console.log(function1);
+    console.log(typeof function1);
+    function1();
+
+    const object1 = {
+      num: 2,
+      fun: function() {
+        console.log('hello3');
+      }
+    };
+    object1.fun();
+
+    function display(param) {  //Passing a value into a funtion
+      console.log(param);
+    }
+    display(2);
+
+     //Passing a function into another function
+    function run(param) {  
+      param();
+    }
+    run(function() {      //Callback funtion
+      console.log('hello4');
+    });
+    */
+
+    /*
+    setTimeout(function() {   //Asyncronous
+      console.log('timeout');
+      console.log('timeout2');
+    }, 3000);
+
+    console.log('nextline');
+
+    setInterval(function() {  //Run function every 3 sec
+      console.log('interval');
+    }, 3000);
+
+    console.log('nextline2')
+    */
+
+    [
+      'make dinner',
+      'watch anime',
+      'watch youtube'
+    ].forEach(function(value, index) { // loop through an array
+      if(value === 'watch anime') {
+        return;
+      }
+      console.log(index);
+      console.log(value);
+    });
+  </script>
+</body> 
+</html>
